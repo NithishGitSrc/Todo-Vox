@@ -1,0 +1,188 @@
+#TodoListPanel {
+  position: relative;
+  min-height: 100vh;
+  box-sizing: border-box;
+  padding: 20px 10px;
+  border: 1px solid blue;
+  display: flex;
+  align-items: top;
+  justify-content: center;
+}
+#TodoListContainer {
+  position: relative;
+  box-sizing: border-box;
+  border: 0px solid red;
+  max-width: 40%;
+}
+@media screen and (max-width: 1180px) {
+  #TodoListContainer {
+    min-width: 60%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #TodoListContainer {
+    min-width: 70%;
+  }
+}
+@media screen and (max-width: 680px) {
+  #TodoListContainer {
+    min-width: 90%;
+  }
+}
+@media screen and (max-width: 365px) {
+  #TodoListContainer {
+    min-width: 100%;
+  }
+}
+
+#NewTodo,
+.TodosContainer {
+  position: relative;
+  padding: 10px;
+  border: 1px solid #9c9c9c;
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0px 3px 2px rgb(188, 188, 188);
+  margin-bottom: 8px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-right: 40px;
+  max-height: 400px;
+  overflow: auto;
+}
+#NewTodo > div:nth-child(1) {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(auto, 1000px) minmax(10px, auto);
+  grid-column-gap: 4px;
+  margin-bottom: 10px;
+}
+#NewTodo textarea {
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid #b3b0b0;
+  padding: 5px;
+  height: 50px;
+  width: 100%;
+  resize: none;
+  outline: none;
+}
+#NewTodo textarea:focus {
+  box-shadow: 0px 2px 2px rgb(170, 170, 170);
+}
+
+#VoiceBtn {
+    margin-top: 4px;
+  height: 34px;
+  background-color: rgba(243, 235, 235, 0.42);
+  border-radius: 10px;
+  display: inline-block;
+  font-size: 24px;
+}
+.btn {
+  position: relative;
+  background-color: rgb(7, 171, 7);
+  border: none;
+  font-weight: bold;
+  color: white;
+  border-radius: 4px;
+  letter-spacing: 1px;
+  padding: 3px;
+  cursor: pointer;
+  display: inline-block;
+}
+.micBtn {
+  background: none;
+  padding-left: 5px;
+}
+.addBtn {
+  padding: 5px;
+  margin: 5px;
+}
+#priorityCont p {
+  background-color: black;
+  border: none;
+  color: white;
+  border-radius: 2px 0px 0px 2px;
+  padding-left: 2px;
+}
+#priorityCont select {
+  background-color: black;
+  border: none;
+  color: white;
+  border-radius: 0px 2px 2px 0px;
+  padding: 3.4px;
+}
+.Todo {
+  position: relative;
+  border: 1px solid rgb(210, 207, 207);
+  padding: 10px 0px;
+  border-radius: 4px;
+  margin: 10px 0;
+  display: grid;
+  grid-template-columns: 20px auto 30px;
+  grid-column-gap: 5px;
+  box-sizing: border-box;
+  background-color: rgb(22, 19, 19);
+  color: white;
+  border-left-width: 7px;
+  border-left-style: solid;
+}
+.completed {
+  background-color: rgb(43, 194, 48);
+  color: black;
+  border: none;
+  border-right: 7px solid rgb(30, 6, 6);
+}
+.TodoCheckBox {
+  padding: 0 6px;
+}
+.Todo button {
+  background: none;
+  border: none;
+  color: rebeccapurple;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.Todo button:hover {
+  color: red;
+  transform: translateY(-2px) rotate(10deg);
+}
+.timePicker {
+  margin: 0 5px;
+}
+.clrDelbtn {
+  padding: 5px;
+  margin: 5px 4px 0 0;
+}
+.Todo input[type="time"] {
+  background-color: whitesmoke;
+  border: none;
+  padding: 0;
+  height: 33px;
+  margin-left: 2px;
+}
+
+.editBtn {
+  margin: 5px 0;
+}
+#Savebtn{
+    background-color: green;
+    color: white;
+    padding: 4px; border-radius: 4px;
+
+}
+
+.Todo p {
+  display: flex;
+  justify-content: left;
+  text-align: justify;
+}
+.timeDetails {
+  display: flex;
+  justify-content: left;
+  text-align: justify;
+  margin-top: 3px;
+  flex-wrap: wrap;
+}
